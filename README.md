@@ -1,4 +1,4 @@
-clang++ -std=c++20 -o hello -I../wasmtime-libs/build/include/ -L../wasmtime-libs/build/lib/ ./src/main.cc -lwasmtime
+clang++ -std=c++20 -o hello -I../wasmtime-libs/build/include/ -L../wasmtime-libs/build/lib/ ./src/main.cc -lwasmtime -lboost_program_options
 
 $ ./hello -i src/wasm/hello.wat
 Initializing...
